@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name ="viewport" content="width=device-width, initial-scale=1">
+<Title>Formulário interativo</Title>
+<link rel ="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+        <form id="cadastroForm">
+            <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+                <input type="mail" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagemSucesso" class="hidden">Cadastro realizado com sucesso!</p>
+    </main>
+    <footer>
+            <p> &copy; 2025 todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
